@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#191917">
+    <meta
+      name="description"
+      content="Conheça a Casa Nostra Barbearia em Três Lagoas. Cabelo, barba e cuidado com o seu estilo. Consulte serviços e horários de atendimento."
+    >
+    <title>Casa Nostra — Seu estilo. Sua casa.</title>
+    <link rel="icon" href="assets/logo-casa-nostra.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="config.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#principal">Pular para o conteúdo</a>
+    <div class="reading-progress" aria-hidden="true"></div>
+    <!-- Cabeçalho: logo e menu de navegação -->
+    <header>
+      <div class="wrap nav">
+        <a class="brand" href="#inicio" aria-label="Casa Nostra, início">
+          <img class="brand-logo" src="assets/logo-casa-nostra.jpg" alt="" width="150" height="150">
+          <span>CASA NOSTRA<small>B A R B E A R I A</small>
+          </span>
+        </a>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+          <svg
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            aria-hidden="true"
+          >
+            <path d="M4 7h16M4 12h16M4 17h16"></path>
+          </svg>
+        </button>
+        <nav id="menu" aria-label="Menu principal">
+          <a href="#servicos">Serviços</a>
+          <a href="#cortes">Cortes</a>
+          <a href="#sobre">A casa</a>
+          <a href="#contato">Onde estamos</a>
+          <a class="nav-cta" href="#contato">Agende seu horário</a>
+        </nav>
+      </div>
+    </header>
+    <main id="principal">
+      <!-- Abertura: apresentação e fotos em destaque -->
+      <section class="hero" id="inicio">
+        <div class="wrap hero-layout">
+          <div class="hero-content">
+            <p class="eyebrow">
+              <span class="short-line"></span> BARBEARIA EM TRÊS LAGOAS · MS</p>
+            <h1>ESTILO É<br>O QUE TE<br>
+              <em>DEFINE.</em>
+            </h1>
+            <p class="hero-copy">Um bom corte muda o visual.<br>O cuidado nos detalhes muda a experiência.</p>
+            <div class="actions">
+              <a class="button copper" data-whatsapp href="#contato">Agendar meu horário</a>
+              <a class="quiet" href="#cortes">Explorar os cortes</a>
+            </div>
+            <div class="hero-bottom">
+              <span>CASA NOSTRA<br>
+                <small>Cabelo. Barba. Personalidade.</small>
+              </span>
+              <span class="hero-location">TRÊS LAGOAS<br>
+                <small>Mato Grosso do Sul</small>
+              </span>
+            </div>
+          </div>
+          <div class="hero-art">
+            <figure class="hero-main-photo">
+              <img
+                src="assets/cortes/1.webp"
+                alt="Corte masculino de perfil com acabamento nas laterais, por Wesley Correia"
+                width="480"
+                height="640"
+                fetchpriority="high"
+              >
+              <figcaption>01 / CORTE &amp; ACABAMENTO</figcaption>
+            </figure>
+            <figure class="hero-small-photo">
+              <img
+                src="assets/cortes/2.webp"
+                alt="Barbeiro da Casa Nostra trabalhando em um corte"
+                width="360"
+                height="640"
+              >
+              <figcaption>FEITO COM ATENÇÃO.</figcaption>
+            </figure>
+            <div class="hero-stamp official-logo">
+              <img src="assets/logo-casa-nostra.jpg" alt="Logo Casa Nostra Barbearia" width="150" height="150">
+            </div>
+            <div class="hero-vertical" aria-hidden="true">SEU ESTILO. SUA CASA.</div>
+          </div>
+        </div>
+      </section>
+      <!-- Faixa animada com controle de pausa -->
+      <div class="ribbon">
+        <div class="marquee" aria-hidden="true">
+          <div>CABELO <i>✦</i> BARBA <i>✦</i> PERSONALIDADE <i>✦</i> CASA NOSTRA <i>✦</i> SEU ESTILO <i>✦</i>
+          </div>
+          <div>CABELO <i>✦</i> BARBA <i>✦</i> PERSONALIDADE <i>✦</i> CASA NOSTRA <i>✦</i> SEU ESTILO <i>✦</i>
+          </div>
+        </div>
+        <p class="sr-only">Cabelo, barba e personalidade. Casa Nostra, seu estilo.</p>
+        <button
+          class="motion-toggle"
+          type="button"
+          aria-label="Pausar faixa em movimento"
+          aria-pressed="false"
+        >
+          <span aria-hidden="true">Ⅱ</span>
+        </button>
+      </div>
+      <!-- Serviços: cards que abrem o popup de agendamento -->
+      <section class="services wrap section" id="servicos">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">01 / O SEU PRÓXIMO VISUAL</p>
+            <h2>O SEU ESTILO.<br>DO <em>SEU JEITO.</em>
+            </h2>
+          </div>
+          <p>Um corte para renovar. Uma barba para alinhar. Um visual completo para sair com a sua identidade.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service">
+            <div class="service-top">
+              <span>01</span>
+              <svg viewBox="0 0 60 60" aria-hidden="true">
+                <circle cx="15" cy="43" r="8"></circle>
+                <circle cx="45" cy="43" r="8"></circle>
+                <path d="M21 38 47 7M39 38 13 7M30 27l4 5"></path>
+              </svg>
+            </div>
+            <div class="service-image">
+              <img
+                src="assets/cortes/1.webp"
+                alt="Corte masculino e acabamento lateral"
+                width="480"
+                height="640"
+                loading="lazy"
+              >
+            </div>
+            <h3>Cabelo</h3>
+            <span class="service-tag">CORTE &amp; ACABAMENTO</span>
+            <p>Renove o corte e encontre o acabamento que combina com você.</p>
+            <button
+              class="service-open"
+              type="button"
+              data-open-services="cabelo"
+              aria-haspopup="dialog"
+              aria-controls="service-dialog"
+              aria-label="Ver serviços e agendar: corte de cabelo"
+            >Ver serviços e agendar</button>
+          </article>
+          <article class="service">
+            <div class="service-top">
+              <span>02</span>
+              <svg viewBox="0 0 60 60" aria-hidden="true">
+                <path d="m14 15 30 0 4 9-5 29H17l-5-29zM18 15V8h24v7M15 30h30M23 38v9m7-9v9m7-9v9"></path>
+              </svg>
+            </div>
+            <div class="service-image">
+              <img
+                src="assets/cortes/3.webp"
+                alt="Referência de corte e contorno do visual masculino"
+                width="480"
+                height="640"
+                loading="lazy"
+              >
+            </div>
+            <h3>Barba</h3>
+            <span class="service-tag">CONTORNO &amp; IDENTIDADE</span>
+            <p>Contornos, alinhamento e atenção aos detalhes para completar o visual.</p>
+            <button
+              class="service-open"
+              type="button"
+              data-open-services="barba"
+              aria-haspopup="dialog"
+              aria-controls="service-dialog"
+              aria-label="Ver serviços e agendar: serviço de barba"
+            >Ver serviços e agendar</button>
+          </article>
+          <article class="service service-featured">
+            <div class="service-top">
+              <span>03</span>
+              <svg viewBox="0 0 60 60" aria-hidden="true">
+                <path d="m30 6 5 17 17 7-17 5-5 19-6-19-16-5 16-7zM47 7v9m-4-4h8"></path>
+              </svg>
+            </div>
+            <div class="service-image">
+              <img
+                src="assets/cortes/2.webp"
+                alt="Atendimento de um barbeiro na Casa Nostra"
+                width="480"
+                height="640"
+                loading="lazy"
+              >
+            </div>
+            <h3>Cabelo &amp; barba</h3>
+            <span class="service-tag">O VISUAL COMPLETO</span>
+            <p>Cuide do visual por inteiro. Consulte as opções para combinar os serviços.</p>
+            <button
+              class="service-open"
+              type="button"
+              data-open-services="combo"
+              aria-haspopup="dialog"
+              aria-controls="service-dialog"
+              aria-label="Ver serviços e agendar: cabelo e barba"
+            >Ver serviços e agendar</button>
+          </article>
+        </div>
+        <p class="service-foot">Valores, opções e disponibilidade? Fale diretamente com a equipe. <a data-whatsapp href="#contato">Vamos conversar</a>
+        </p>
+      </section>
+      <!-- Sobre a casa: fotos dos bastidores e apresentação -->
+      <section class="about" id="sobre">
+        <div class="wrap about-grid">
+          <div class="about-visual">
+            <span class="image-label">NOS BASTIDORES DO SEU VISUAL</span>
+            <figure class="about-photo">
+              <img
+                src="assets/cortes/2.webp"
+                alt="Atendimento e acabamento de um corte na Casa Nostra"
+                width="360"
+                height="640"
+                loading="lazy"
+              >
+              <figcaption>O cuidado aparece nos detalhes.<small>Imagem do Instagram da Casa Nostra.</small>
+              </figcaption>
+            </figure>
+            <img
+              class="about-detail"
+              src="assets/cortes/3.webp"
+              alt="Detalhe de um corte publicado por Wesley Correia"
+              width="480"
+              height="640"
+              loading="lazy"
+            >
+          </div>
+          <div class="about-copy">
+            <p class="eyebrow">02 / MUITO PRAZER, CASA NOSTRA</p>
+            <h2>A SUA PAUSA.<br>A NOSSA <em>CASA.</em>
+            </h2>
+            <p>Uma pausa na rotina para cuidar de você. A Casa Nostra reúne estilo, conversa e a tradição da barbearia em Três Lagoas.</p>
+            <p>Desde 2014, o cuidado com o visual faz parte da nossa história. Agora, é a sua vez de fazer parte dela.</p>
+            <a
+              class="text-link"
+              data-instagram
+              href="https://www.instagram.com/casanostrabarbearia/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Conheça a casa no Instagram</a>
+            <div class="about-values">
+              <div>
+                <strong>01</strong>
+                <span>Estilo próprio</span>
+              </div>
+              <div>
+                <strong>02</strong>
+                <span>Atenção aos detalhes</span>
+              </div>
+              <div>
+                <strong>03</strong>
+                <span>Uma boa conversa</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Galeria: carrossel de fotos e vídeos -->
+      <section class="instagram wrap section" id="cortes" aria-labelledby="cortes-title">
+        <p class="eyebrow">DIRETO DO NOSSO INSTAGRAM</p>
+        <div class="insta-row">
+          <h2 id="cortes-title">CORTES REAIS.<br>INSPIRAÇÃO <em>PRA VOCÊ.</em>
+          </h2>
+          <div>
+            <p>Cortes e bastidores da Casa Nostra.<br>Veja os detalhes e encontre sua inspiração.</p>
+            <a
+              class="button outline"
+              data-instagram
+              href="https://www.instagram.com/casanostrabarbearia/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                class="instagram-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.7"
+                aria-hidden="true"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                <circle cx="12" cy="12" r="4"></circle>
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle>
+              </svg>
+              <span>@casanostrabarbearia</span>
+            </a>
+          </div>
+        </div>
+        <div
+          class="cuts-carousel"
+          role="region"
+          aria-roledescription="carrossel"
+          aria-label="Fotos e vídeos de cortes e da barbearia"
+        >
+          <div
+            class="cuts-track"
+            id="cuts-track"
+            tabindex="0"
+            aria-label="Fotos e vídeos da Casa Nostra. Use as setas do teclado ou deslize para navegar."
+          >
+            <article class="cut-slide" role="group" aria-roledescription="slide" aria-label="1 de 6">
+              <div class="cut-photo">
+                <img
+                  src="assets/cortes/1.webp"
+                  alt="Corte masculino de perfil com acabamento nas laterais."
+                  width="480"
+                  height="640"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </div>
+              <div class="cut-copy">
+                <p class="eyebrow">CASA NOSTRA · 01 / 06</p>
+                <h3>Corte e acabamento</h3>
+                <p>O estilo está nos detalhes.</p>
+                <a
+                  class="text-link"
+                  href="https://www.instagram.com/pirata_barber_/p/DcdwIqsDrHY/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >Ver publicação original</a>
+                <small>Foto: Wesley Correia</small>
+              </div>
+            </article>
+            <article class="cut-slide" role="group" aria-roledescription="slide" aria-label="2 de 6">
+              <div class="cut-photo">
+                <img
+                  src="assets/cortes/3.webp"
+                  alt="Corte masculino com volume no topo e acabamento na lateral."
+                  width="480"
+                  height="640"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </div>
+              <div class="cut-copy">
+                <p class="eyebrow">CASA NOSTRA · 02 / 06</p>
+                <h3>Forma e personalidade</h3>
+                <p>Um visual que fala por você.</p>
+                <a
+                  class="text-link"
+                  href="https://www.instagram.com/pirata_barber_/p/Da1SjIvRtTg/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >Ver publicação original</a>
+                <small>Foto: Wesley Correia</small>
+              </div>
+            </article>
+            <article class="cut-slide" role="group" aria-roledescription="slide" aria-label="3 de 6">
+              <div class="cut-photo">
+                <img
+                  src="assets/cortes/2.webp"
+                  alt="Barbeiro trabalhando no acabamento de um corte na Casa Nostra."
+                  width="480"
+                  height="640"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </div>
+              <div class="cut-copy">
+                <p class="eyebrow">CASA NOSTRA · 03 / 06</p>
+                <h3>Por trás do corte</h3>
+                <p>Cuidado em cada etapa.</p>
+                <a
+                  class="text-link"
+                  href="https://www.instagram.com/casanostrabarbearia/reel/DcTeKoDxn_f/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >Ver publicação original</a>
+                <small>Casa Nostra · capa de vídeo</small>
+              </div>
+            </article>
+            <article
+              class="cut-slide"
+              role="group"
+              aria-roledescription="slide"
+              aria-label="4 de 6"
+              data-media="video"
+            >
+              <div class="cut-photo">
+                <video
+                  controls
+                  playsinline
+                  preload="none"
+                  poster="assets/cortes/area-gamer.webp"
+                  width="720"
+                  height="1280"
+                  aria-label="Área gamer da Casa Nostra"
+                >
+                  <source src="assets/videos/area-gamer.mp4" type="video/mp4">Seu navegador não suporta este vídeo. Abra a publicação original abaixo.</source>
+                </video>
+              </div>
+              <div class="cut-copy">
+                <p class="eyebrow">CASA NOSTRA · 04 / 06</p>
+                <h3>Área gamer da Casa Nostra</h3>
+                <p>Uma novidade para conhecer na sua próxima visita.</p>
+                <a
+                  class="text-link"
+                  href="https://www.instagram.com/reel/DW1njXuRTFl/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >Ver publicação original</a>
+                <small>Casa Nostra · vídeo original</small>
+                <p class="video-hint">A troca automática pausa neste vídeo. Use os controles para assistir ou avance para continuar.</p>
+              </div>
+            </article>
+            <article
+              class="cut-slide"
+              role="group"
+              aria-roledescription="slide"
+              aria-label="5 de 6"
+              data-media="photo"
+            >
+              <div class="cut-photo">
+                <img
+                  src="assets/cortes/novo-corte.webp"
+                  alt="Corte masculino de perfil, com cabelo volumoso no topo e acabamento nas laterais."
+                  width="1080"
+                  height="1440"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </div>
+              <div class="cut-copy">
+                <p class="eyebrow">CASA NOSTRA · 05 / 06</p>
+                <h3>Um novo corte, seu estilo</h3>
+                <p>Inspiração direto do Instagram da casa.</p>
+                <a
+                  class="text-link"
+                  href="https://www.instagram.com/p/DW32ccQkdB7/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >Ver publicação original</a>
+                <small>Foto: @__wendersilva · Casa Nostra</small>
+              </div>
+            </article>
+            <article
+              class="cut-slide"
+              role="group"
+              aria-roledescription="slide"
+              aria-label="6 de 6"
+              data-media="video"
+            >
+              <div class="cut-photo">
+                <video
+                  controls
+                  playsinline
+                  preload="none"
+                  poster="assets/cortes/7.webp"
+                  width="720"
+                  height="1280"
+                  aria-label="Conheça a barbearia"
+                >
+                  <source src="assets/videos/conheca-a-casa.mp4" type="video/mp4">Seu navegador não suporta este vídeo. Abra a publicação original abaixo.</source>
+                </video>
+              </div>
+              <div class="cut-copy">
+                <p class="eyebrow">CASA NOSTRA · 06 / 06</p>
+                <h3>Conheça a barbearia</h3>
+                <p>Dê uma olhada no espaço e venha conhecer a casa.</p>
+                <a
+                  class="text-link"
+                  href="https://www.instagram.com/reel/DbvX8ITRMoC/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >Ver publicação original</a>
+                <small>Casa Nostra · vídeo original</small>
+                <p class="video-hint">A troca automática pausa neste vídeo. Use os controles para assistir ou avance para continuar.</p>
+              </div>
+            </article>
+          </div>
+          <div class="cuts-thumbs" aria-label="Escolher uma foto">
+            <button
+              type="button"
+              data-cut="0"
+              aria-label="Mostrar foto 1"
+              aria-pressed="true"
+              aria-controls="cuts-track"
+            >
+              <img src="assets/cortes/1.webp" width="48" height="56" alt="" loading="lazy">
+              <span>01</span>
+            </button>
+            <button
+              type="button"
+              data-cut="1"
+              aria-label="Mostrar foto 2"
+              aria-pressed="false"
+              aria-controls="cuts-track"
+            >
+              <img src="assets/cortes/3.webp" width="48" height="56" alt="" loading="lazy">
+              <span>02</span>
+            </button>
+            <button
+              type="button"
+              data-cut="2"
+              aria-label="Mostrar foto 3"
+              aria-pressed="false"
+              aria-controls="cuts-track"
+            >
+              <img src="assets/cortes/2.webp" width="48" height="56" alt="" loading="lazy">
+              <span>03</span>
+            </button>
+            <button
+              type="button"
+              data-cut="3"
+              aria-label="Mostrar vídeo 4"
+              aria-pressed="false"
+              aria-controls="cuts-track"
+            >
+              <img src="assets/cortes/area-gamer.webp" width="48" height="56" alt="" loading="lazy">
+              <span>04</span>
+            </button>
+            <button
+              type="button"
+              data-cut="4"
+              aria-label="Mostrar foto 5"
+              aria-pressed="false"
+              aria-controls="cuts-track"
+            >
+              <img src="assets/cortes/novo-corte.webp" width="48" height="56" alt="" loading="lazy">
+              <span>05</span>
+            </button>
+            <button
+              type="button"
+              data-cut="5"
+              aria-label="Mostrar vídeo 6"
+              aria-pressed="false"
+              aria-controls="cuts-track"
+            >
+              <img src="assets/cortes/7.webp" width="48" height="56" alt="" loading="lazy">
+              <span>06</span>
+            </button>
+          </div>
+          <div class="cuts-controls">
+            <button
+              class="cuts-play"
+              id="cuts-play"
+              type="button"
+              aria-controls="cuts-track"
+              aria-label="Pausar troca automática de fotos"
+            >Pausar carrossel</button>
+            <div class="cuts-buttons">
+              <button type="button" id="cuts-prev" aria-label="Foto anterior" aria-controls="cuts-track">←</button>
+              <span id="cuts-count" role="status" aria-live="off" aria-atomic="true">Foto 1 de 6</span>
+              <button type="button" id="cuts-next" aria-label="Próxima foto" aria-controls="cuts-track">→</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Etapas para conhecer a barbearia -->
+      <section class="visit wrap section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">O PRÓXIMO PASSO É SIMPLES</p>
+            <h2>DO SEU JEITO.<br>DO INÍCIO AO <em>FIM.</em>
+            </h2>
+          </div>
+          <p>Encontrou uma referência que combina com você? A conversa começa antes de sentar na cadeira.</p>
+        </div>
+        <div class="visit-grid">
+          <article>
+            <span>01 / INSPIRE-SE</span>
+            <h3>Encontre seu visual.</h3>
+            <p>Explore os cortes da casa ou separe uma foto de referência para mostrar à equipe.</p>
+          </article>
+          <article>
+            <span>02 / CONVERSE</span>
+            <h3>Chame no WhatsApp.</h3>
+            <p>Conte o que você tem em mente e consulte os serviços, valores e horários disponíveis.</p>
+          </article>
+          <article>
+            <span>03 / VENHA CONHECER</span>
+            <h3>Faça parte da casa.</h3>
+            <p>Com o horário combinado, é só chegar e dedicar esse momento ao seu estilo.</p>
+          </article>
+        </div>
+      </section>
+      <!-- Contato: WhatsApp, telefone e localização -->
+      <section class="contact" id="contato">
+        <div class="wrap contact-grid">
+          <div>
+            <p class="eyebrow">03 / A CADEIRA ESTÁ TE ESPERANDO</p>
+            <h2>BORA RENOVAR<br>O <em>VISUAL?</em>
+            </h2>
+            <p>Escolha seu serviço e consulte os horários disponíveis diretamente com a equipe.</p>
+            <a class="button copper" data-whatsapp href="#contato">Conversar no WhatsApp</a>
+            <p class="contact-small">O horário é confirmado pela equipe durante o atendimento.</p>
+          </div>
+          <div class="contact-card">
+            <div>
+              <span class="detail-label">TELEFONE &amp; WHATSAPP</span>
+              <a class="phone" data-phone href="tel:+5567991076817">(67) 99107-6817</a>
+            </div>
+            <div>
+              <span class="detail-label">VENHA CONHECER</span>
+              <p data-address>Rua João Silva, 756 · Centro<br>Três Lagoas — MS</p>
+              <a
+                class="text-link"
+                data-map
+                href="https://www.google.com/maps/search/?api=1&amp;query=Casa%20Nostra%20Barbearia%20Tr%C3%AAs%20Lagoas"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Abrir no Google Maps</a>
+            </div>
+            <div>
+              <span class="detail-label">HORÁRIOS DE ATENDIMENTO</span>
+              <p>Consulte os dias e horários pelo WhatsApp.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Perguntas frequentes -->
+      <section class="faq wrap section">
+        <div>
+          <p class="eyebrow">ANTES DE VIR</p>
+          <h2>ANTES DE<br>
+            <em>SENTAR NA CADEIRA.</em>
+          </h2>
+        </div>
+        <div class="questions">
+          <details>
+            <summary>Como consultar um horário?</summary>
+            <p>Clique em um dos botões de WhatsApp, envie sua preferência de serviço e combine o horário diretamente com a equipe. O site não faz reservas automáticas.</p>
+          </details>
+          <details>
+            <summary>Onde encontro os valores dos serviços?</summary>
+            <p>Fale com a equipe pelo WhatsApp para consultar os valores atualizados e as opções disponíveis para o seu atendimento.</p>
+          </details>
+          <details>
+            <summary>Posso levar uma referência de corte?</summary>
+            <p>Envie ou leve uma foto do visual que você tem em mente para conversar com o barbeiro sobre as possibilidades.</p>
+          </details>
+        </div>
+      </section>
+    </main>
+    <!-- Rodapé: marca e redes sociais -->
+    <footer>
+      <div class="wrap footer-wordmark" aria-hidden="true">CASA NOSTRA<span>BARBEARIA</span>
+      </div>
+      <div class="wrap footer-top">
+        <a class="brand" href="#inicio">
+          <img class="brand-logo" src="assets/logo-casa-nostra.jpg" alt="" width="150" height="150">
+          <span>CASA NOSTRA<small>B A R B E A R I A</small>
+          </span>
+        </a>
+        <p>Seu estilo. Sua casa.</p>
+        <div class="footer-socials" aria-label="Redes sociais e contato">
+          <a
+            class="social-link"
+            data-whatsapp
+            href="https://wa.me/5567991076817"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Conversar pelo WhatsApp"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20 11.7a8 8 0 0 1-11.8 7L4 20l1.2-4.1A8 8 0 1 1 20 11.7Z"></path>
+              <path d="M8.3 7.8c-.6 2.9 2.5 6.1 5.7 6.6l1.3-1.6-2-1.1-.9.8-2.3-2.4.7-.9-1-1.8Z"></path>
+            </svg>
+            <span>WhatsApp</span>
+          </a>
+          <a
+            class="social-link"
+            data-instagram
+            href="https://www.instagram.com/casanostrabarbearia/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visitar o Instagram da Casa Nostra"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+              <circle cx="12" cy="12" r="4"></circle>
+              <circle class="instagram-dot" cx="17.5" cy="6.5" r="1"></circle>
+            </svg>
+            <span>Instagram</span>
+          </a>
+        </div>
+      </div>
+      <div class="wrap footer-bottom">
+        <span>© <span id="year">2026</span> Casa Nostra Barbearia.</span>
+        <span>Três Lagoas · Mato Grosso do Sul</span>
+      </div>
+    </footer>
+    <a
+      class="floating"
+      data-whatsapp
+      href="#contato"
+      aria-label="Conversar com a Casa Nostra pelo WhatsApp"
+    >
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M20 11.7a8 8 0 0 1-11.8 7L4 20l1.2-4.1A8 8 0 1 1 20 11.7Z"></path>
+        <path d="M8.3 7.8c-.6 2.9 2.5 6.1 5.7 6.6l1.3-1.6-2-1.1-.9.8-2.3-2.4.7-.9-1-1.8Z"></path>
+      </svg>
+      <span>Agendar horário</span>
+    </a>
+    <!-- Popup de serviços: seleção e solicitação pelo WhatsApp -->
+    <dialog
+      class="service-dialog"
+      id="service-dialog"
+      aria-labelledby="service-dialog-title"
+      aria-describedby="service-dialog-description"
+    >
+      <div class="dialog-header">
+        <img src="assets/logo-casa-nostra.jpg" class="dialog-logo" alt="" width="150" height="150">
+        <span>CASA NOSTRA BARBEARIA</span>
+        <button class="dialog-close" type="button" aria-label="Fechar serviços">
+          <svg
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            aria-hidden="true"
+          >
+            <path d="m6 6 12 12M18 6 6 18"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="dialog-content">
+        <p class="eyebrow">SEU PRÓXIMO VISUAL</p>
+        <h2 id="service-dialog-title">ESCOLHA SEU <em>SERVIÇO.</em>
+        </h2>
+        <p id="service-dialog-description">Selecione uma opção e converse com a equipe para combinar o seu horário.</p>
+        <fieldset class="service-options">
+          <legend>Serviços disponíveis</legend>
+          <label class="service-option">
+            <input type="radio" name="booking-service" value="cabelo">
+            <span class="service-option-copy">
+              <strong data-service-name="cabelo">Cabelo</strong>
+              <small>Corte masculino e acabamento.</small>
+            </span>
+            <span class="service-price" data-service-price="cabelo">Sob consulta</span>
+          </label>
+          <label class="service-option">
+            <input type="radio" name="booking-service" value="barba">
+            <span class="service-option-copy">
+              <strong data-service-name="barba">Barba</strong>
+              <small>Contornos e alinhamento da barba.</small>
+            </span>
+            <span class="service-price" data-service-price="barba">Sob consulta</span>
+          </label>
+          <label class="service-option">
+            <input type="radio" name="booking-service" value="combo">
+            <span class="service-option-copy">
+              <strong data-service-name="combo">Cabelo &amp; barba</strong>
+              <small>Corte e barba em um atendimento.</small>
+            </span>
+            <span class="service-price" data-service-price="combo">Sob consulta</span>
+          </label>
+        </fieldset>
+        <div class="booking-summary">
+          <span>Serviço escolhido</span>
+          <strong id="booking-name">Cabelo</strong>
+          <span id="booking-price">Sob consulta</span>
+        </div>
+        <p class="booking-note">Valores e disponibilidade são confirmados pela equipe no WhatsApp.</p>
+        <a
+          class="button copper booking-cta"
+          id="booking-link"
+          href="https://wa.me/5567991076817"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            width="22"
+            height="22"
+            aria-hidden="true"
+          >
+            <path d="M20 11.7a8 8 0 0 1-11.8 7L4 20l1.2-4.1A8 8 0 1 1 20 11.7Z"></path>
+            <path d="M8.3 7.8c-.6 2.9 2.5 6.1 5.7 6.6l1.3-1.6-2-1.1-.9.8-2.3-2.4.7-.9-1-1.8Z"></path>
+          </svg>Agendar agora</a>
+      </div>
+    </dialog>
+  </body>
+</html>
