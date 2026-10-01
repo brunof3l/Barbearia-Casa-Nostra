@@ -8,7 +8,7 @@ Site de apresentação da Casa Nostra, feito com HTML, CSS e JavaScript. O códi
 - Cards de serviços que abrem um popup para escolher o atendimento.
 - Solicitação de agendamento pelo WhatsApp com o serviço selecionado.
 - Carrossel com fotos e vídeos reais, miniaturas e navegação por teclado/toque.
-- Fotos com avanço a cada 3 segundos, controle de pausa e pausa nos vídeos.
+- Fotos com avanço a cada 3 segundos; vídeos automáticos sem áudio e avanço ao terminar. Controle de pausa e botão para ativar o som.
 - Menu responsivo, localização no Google Maps e links de Instagram.
 - Animações com respeito à preferência de movimento reduzido.
 

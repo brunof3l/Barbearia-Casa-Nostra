@@ -2613,3 +2613,26 @@ img {
     padding-inline: 18px
   }
 }
+
+/* Controle de áudio sobre os vídeos do carrossel. */
+.cut-photo:has(video) {
+  position: relative;
+}
+.video-sound {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 2;
+  padding: .65rem 1rem;
+  border: 1px solid rgba(255, 255, 255, .4);
+  border-radius: 999px;
+  background: rgba(15, 15, 15, .9);
+  color: #fff;
+  font: inherit;
+  font-size: .875rem;
+  cursor: pointer;
+}
+.video-sound:focus-visible {
+  outline: 3px solid #dba65b;
+  outline-offset: 3px;
+}
