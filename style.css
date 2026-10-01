@@ -1805,24 +1805,7 @@ footer {
   flex-wrap: wrap
 }
 
-.cuts-play {
-  min-height: 48px;
-  padding: 12px 18px;
-  border: 1px solid #727967;
-  background: transparent;
-  color: var(--text);
-  font-size: .875rem
-}
 
-.cuts-play:hover:not(:disabled) {
-  border-color: var(--accent);
-  color: var(--accent)
-}
-
-.cuts-play:disabled {
-  color: var(--muted);
-  cursor: default
-}
 
 @media(max-width:650px) {
   .cuts-thumbs {
@@ -1836,10 +1819,6 @@ footer {
 
   .cuts-controls {
     gap: 16px
-  }
-
-  .cuts-play {
-    width: 100%
   }
 
   .cut-photo {
@@ -2436,9 +2415,8 @@ img {
   border-color: #424938
 }
 
-.cuts-buttons button,
-.cuts-play {
-  border-radius: 8px
+.cuts-buttons button {
+  border-radius: 8px;
 }
 
 @media(max-width:1100px) {

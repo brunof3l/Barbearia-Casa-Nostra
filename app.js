@@ -46,16 +46,14 @@ if (cutsTrack) {
   const prev = document.getElementById('cuts-prev');
   const next = document.getElementById('cuts-next');
   const counter = document.getElementById('cuts-count');
-  const play = document.getElementById('cuts-play');
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
   let active = 0;
-  let paused = false;
   let visible = !('IntersectionObserver' in window);
   let timer = null;
   let scrollTimer = null;
 
   function canPlay() {
-    return !paused && visible && !document.hidden;
+    return visible && !document.hidden;
   }
 
   function clearTimer() {
@@ -76,11 +74,7 @@ if (cutsTrack) {
 
   function syncPlayback() {
     clearTimer();
-    play.disabled = false;
-    play.textContent = paused ? 'Retomar carrossel' : 'Pausar carrossel';
-    play.setAttribute('aria-label', play.textContent);
-    play.setAttribute('aria-pressed', String(paused));
-    counter.setAttribute('aria-live', paused ? 'polite' : 'off');
+    counter.setAttribute('aria-live', 'off');
     const video = slides[active].querySelector('video');
     if (!canPlay()) {
       video?.pause();
@@ -122,10 +116,6 @@ if (cutsTrack) {
     syncPlayback();
   }
 
-  play.addEventListener('click', () => {
-    paused = !paused;
-    syncPlayback();
-  });
   slides.forEach(slide => {
     const video = slide.querySelector('video');
     if (!video) return;
